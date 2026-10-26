@@ -218,7 +218,8 @@ def make_viral_caption(txt, duration, config):
 # ------------------------------------------------------------
 # Whisper and SRT handling
 # ------------------------------------------------------------
-WHISPER_PATH = os.path.expanduser("~") + "/Documents/projects/libraries_AI/whisper.cpp"
+# Where whisper.cpp is built. Change it with the WHISPER_PATH environment variable.
+WHISPER_PATH = os.environ.get("WHISPER_PATH", os.path.expanduser("~/Documents/projects/libraries_AI/whisper.cpp"))
 BINARY_PATH = f"{WHISPER_PATH}/build/bin/whisper-cli"
 MODEL_PATH = f"{WHISPER_PATH}/models/ggml-small.en.bin"
 

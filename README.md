@@ -8,3 +8,5 @@ Robust Font Rendering: Features a multi-stage fallback system for TextClip gener
 Signal Processing: Utilizes FFmpeg for standardized audio extraction (16kHz Mono PCM) required for optimal Whisper model accuracy.
 
 Extensible Composition: Employs a modular architecture allowing for custom caption effects, manual SRT input, and seamless integration with NLE workflows.
+
+Whisper location: by default `~/Documents/projects/libraries_AI/whisper.cpp` (built, with `models/ggml-small.en.bin`). To use another folder: `WHISPER_PATH=/path/to/whisper.cpp python3 caption_generator.py`.
