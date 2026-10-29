@@ -1,7 +1,5 @@
 # Video-Caption-Generator
 
-> **Archived.** This project is finished and no longer updated. I now use [Remotion](https://www.remotion.dev/) and its captions package for this job.
-
 Adds styled, animated captions to videos. Speech is turned into text locally with [whisper.cpp](https://github.com/ggml-org/whisper.cpp), and the captions are drawn with MoviePy 2.x.
 
 ## Features
