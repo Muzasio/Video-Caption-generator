@@ -28,6 +28,11 @@ def create_text_clip(text, style_config=None):
     if isinstance(margin, list):
         margin = tuple(margin)
 
+    # MoviePy measures some fonts (e.g. Komika) too short and cuts off the
+    # bottom of the text, so add extra room below.
+    left, top, right, bottom = margin
+    margin = (left, top, right, bottom + font_size // 2)
+
     # Use ImageMagick if available
     if mpconfig.IMAGEMAGICK_BINARY is not None:
         try:
