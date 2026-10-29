@@ -1,0 +1,178 @@
+{
+  "font": {
+    "path": "/usr/local/share/fonts/k/KOMIKAX_.ttf",
+    "name": "Komika Axis",
+    "color": "red",
+    "stroke_color": "black",
+    "stroke_width": 6,
+    "size": 60,
+    "description": "Engaging | Komika (MrBeast style)"
+  },
+  "align": "center",
+  "margin": [
+    40,
+    40,
+    40,
+    40
+  ],
+  "caption_style": "engaging",
+  "caption_bottom_margin": 80,
+  "timestamp_offset": 0,
+  "video": {
+    "fps": 60
+  },
+  "threads": 8,
+  "gaming": {
+    "font": {
+      "path": "/usr/local/share/fonts/p/PressStart2P_Regular.ttf",
+      "name": "Press Start 2P",
+      "color": "red",
+      "stroke_color": "black",
+      "stroke_width": 4,
+      "size": 26
+    },
+    "align": "center",
+    "margin": [
+      40,
+      40,
+      40,
+      40
+    ],
+    "description": "Gaming | Pixelated retro font",
+    "scale_peak": 1.12,
+    "scale_duration": 0.12,
+    "shake_intensity": 10,
+    "shake_duration": 0.15,
+    "slide_enabled": true,
+    "slide_direction": "right",
+    "slide_distance": 200,
+    "glitch_intensity": 15,
+    "glitch_chance": 0.08,
+    "glitch_active_duration": 0.2,
+    "flash_enabled": true,
+    "flash_color": "white",
+    "flash_duration": 0.05,
+    "word_swipe_enabled": true,
+    "word_appear_duration": 0.25,
+    "word_stagger": 0.15,
+    "hold_time": 0.5,
+    "swipe_down_duration": 0.3,
+    "word_spacing": 10
+  },
+  "podcast": {
+    "background_color": "#1A1A1A",
+    "background_opacity": 0.75,
+    "background_padding": 14,
+    "speaker_gap": 100,
+    "corner_radius": 15,
+    "speaker_color": "#FF6B6B",
+    "speaker_size": 56,
+    "align": "center",
+    "margin": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "font": {
+      "path": "/usr/local/share/fonts/m/Montserrat_VariableFont_wght.ttf",
+      "name": "Montserrat",
+      "color": "white",
+      "stroke_color": "#333333",
+      "stroke_width": 1,
+      "size": 90
+    },
+    "description": "Podcast | Clean modern sans-serif"
+  },
+  "cinematic": {
+    "letterbox_height": 60,
+    "letterbox_color": "#000000",
+    "letterbox_opacity": 0.9,
+    "align": "center",
+    "margin": [
+      40,
+      40,
+      40,
+      40
+    ],
+    "font": {
+      "path": "/usr/local/share/fonts/p/PlayfairDisplay_VariableFont_wght.ttf",
+      "name": "Playfair Display",
+      "color": "#F5F5DC",
+      "stroke_color": "#4A4A4A",
+      "stroke_width": 2,
+      "size": 34
+    },
+    "description": "Cinematic | Elegant serif for movie style"
+  },
+  "asmr": {
+    "softness": 0.95,
+    "glow_intensity": 5,
+    "align": "center",
+    "margin": [
+      40,
+      40,
+      40,
+      40
+    ],
+    "font": {
+      "path": "/usr/local/share/fonts/q/Quicksand_VariableFont_wght.ttf",
+      "name": "Quicksand",
+      "color": "#FFFAF0",
+      "stroke_color": "#D4B8A8",
+      "stroke_width": 6,
+      "size": 70
+    },
+    "description": "ASMR | Soft rounded gentle font"
+  },
+  "pipeline": {
+    "output_dir": "output",
+    "temp_dir": ".vtmp",
+    "resolution": "1920x1080",
+    "fps": 60,
+    "jump_cuts": {
+      "enabled": true,
+      "threshold": "-35dB",
+      "min_dur": 0.3,
+      "pad": 0.05
+    },
+    "audio": {
+      "denoise": true,
+      "normalize": true,
+      "bgm_path": null,
+      "bgm_volume": 0.2,
+      "sidechain": true
+    },
+    "color_grade": {
+      "preset": "gaming",
+      "lut": null,
+      "_presets": "gaming | cyber | neutral",
+      "_lut_note": "set lut to absolute path of a .cube file to override preset"
+    },
+    "transition": {
+      "type": "zoomin",
+      "duration": 0.5,
+      "beat_sync": true,
+      "_types": "zoomin | fadeblack | slideleft | slideright | pixelize | dissolve | wiperight | circlecrop"
+    },
+    "png_overlays": [],
+    "watermark": {
+      "enabled": true,
+      "text": "YOUR_NAME",
+      "position": "top-right",
+      "_positions": "top-right | top-left | bottom-right | bottom-left"
+    }
+  },
+  "avatar": {
+    "enabled": false,
+    "position": "bottom-center",
+    "zone_height_pct": 0.35,
+    "_note": "When enabled, captions avoid this zone. Set enabled=true when PNG assets are ready.",
+    "_positions": "bottom-center | bottom-left | bottom-right",
+    "png_sequence_dir": null,
+    "fps": 30,
+    "scale": 1.0,
+    "x_offset": 0,
+    "y_offset": 0
+  }
+}

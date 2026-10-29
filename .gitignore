@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+venv/
+.venv/
+.env
+*.key
+*.pem
+# media and outputs
+*.mp4
+*.mkv
+*.webm
+*.mov
+*.wav
+*.srt
+test-media/
