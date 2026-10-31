@@ -110,7 +110,7 @@ To use a whisper.cpp build in another folder: `WHISPER_PATH=/path/to/whisper.cpp
 
 Work on this project is paused.
 
-**Done**
+**Working**
 - Speech to text, SRT output, 5 caption styles, text file mode
 - Full auto edit pipeline
 - Installer with uninstall
